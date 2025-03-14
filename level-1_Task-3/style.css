@@ -2,11 +2,16 @@
     margin: 0;
     padding: 0;
 }
-
+h1{
+    font-size: 80px;
+    color:rgb(255, 0, 0);
+    margin:20px;
+}
 .hero{
     height:100vh;
     width:100vw;
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background:linear-gradient(45deg,blue,cyan);
@@ -56,6 +61,7 @@ select{
     height:90px;
     font-size: 30px;
     color: white;
+    border-radius: 10px;
 }
 button:active{
     background-color: pink;
@@ -66,4 +72,5 @@ button:active{
     height:80%;
     background-color: dodgerblue;
     font-size: 120px;
+    padding-bottom: 12px;
 }
