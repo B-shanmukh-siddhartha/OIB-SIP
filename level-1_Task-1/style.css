@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.hero {
+    background: linear-gradient(to right, #FFEBB2, #FF9D76);
+    padding: 50px 20px;
+}
+.hero h1 {
+    font-size: 2.5em;
+}
+.cta-button {
+    background: #008060;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.features, .advantages, .servers {
+    padding: 50px 20px;
+}
+.feature, .advantage {
+    margin-bottom: 20px;
+}
+
+header {
+    background: #ffe8d6;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.button {
+    display: inline-block;
+    background: #007f5f;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #005f47;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+    background: white;
+}
+
+.feature {
+    width: 30%;
+    min-width: 280px;
+    margin: 20px;
+    text-align: center;
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+}
+
+/* Ultra-fast Servers Section */
+.servers {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff0e6;
+}
+
+.servers .stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.stats div {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .feature {
+        width: 90%;
+    }
+    .stats {
+        flex-direction: column;
+    }
+}

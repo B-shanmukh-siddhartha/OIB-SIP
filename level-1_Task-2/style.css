@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0080ff;
+    color: white;
+}
+
+header {
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    color: rgb(255, 255, 255);
+    padding: 15px 0;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(217, 255, 0);
+    font-weight: bold;
+    color: white;
+}
+
+.menu-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    background-color: #bf00ff;
+    color: white;
+}
+
+.about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.skills {
+    padding: 40px 0;
+    text-align: center;
+    background:linear-gradient(45deg,purple,blue);
+    color: white;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.skill {
+    background: #ff4b2b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.projects {
+    padding: 40px 0;
+    text-align: center;
+    background-color: blue;
+}
+
+.project-card {
+    background: violet;
+    color: white;
+    padding: 20px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.contact {
+    padding: 40px 0;
+    text-align: center;
+    background:linear-gradient(45deg,blueviolet,blue);
+    color: white;
+}
+
+footer {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
